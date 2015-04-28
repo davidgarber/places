@@ -1,0 +1,18 @@
+<h1>Places You've Been</h1>
+
+<p1>Here are all the places you've been:</p>
+
+  <ul>
+    <% @places.each() do |places| %>
+      <li><%= places.countries() %></li>
+    <% end %>
+  </ul>
+
+  <p>Add a new country:</p>
+
+  <form action="/places" method="post">
+    <label for="countries">Country Name</label>
+    <input id="countries" name="countries" type="text">
+
+    <button type="submit">Add country</button>
+  </form>

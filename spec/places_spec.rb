@@ -2,6 +2,10 @@ require('rspec')
 require('places')
 
 describe(Places) do
+  before() do
+    Places.clear()
+  end
+  
   describe("#countries") do
     it("lets you enter a country you've been to") do
       test_places = Places.new("Spain")
