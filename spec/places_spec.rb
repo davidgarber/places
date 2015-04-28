@@ -22,4 +22,11 @@ describe(Places) do
       expect(Places.all()).to(eq([test_places]))
     end
   end
+  describe('.clear') do
+    it("lets you clear list") do
+      Places.new("Spain").save()
+      Places.clear()
+      expect(Places.all()).to(eq([]))
+    end
+  end
 end
