@@ -7,4 +7,8 @@ class Places
   define_method(:countries) do
     @countries
   end
+
+  define_singleton_method(:all) do
+    []
+  end
 end

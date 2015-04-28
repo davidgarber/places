@@ -8,4 +8,10 @@ describe(Places) do
       expect(test_places.countries()).to(eq("Spain"))
     end
   end
+
+  describe('.all') do
+    it("creates a blank array for you to fill") do
+      expect(Places.all()).to(eq([]))
+    end
+    end
 end
